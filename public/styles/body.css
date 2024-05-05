@@ -1,0 +1,350 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Muli&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cookie&display=swap);
+
+/* Reset and global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("../assets/images/background.png"), linear-gradient(90deg, #0f1923, #0f1923);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Server card styles */
+.server-card {
+    width: 200px;
+    height: 200px;
+    background-color: #7289da;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s;
+}
+
+.server-card:hover {
+    transform: scale(1.1);
+}
+
+.server-card:last-child {
+    margin-right: 0;
+}
+
+.server-card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.server-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.server-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Main layout */
+main {
+    padding-left: 30%;
+    padding-right: 50%;
+    margin-top: 15%;
+    margin-left: -25%;
+    transition-duration: 0.5s;
+    text-align: center;
+    cursor: default;
+}
+
+/* Styles for small screens */
+@media only screen and (max-width: 800px) {
+    /* Adjust header padding */
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+        transition-duration: 0.5s;
+    }
+
+    /* Hide the .foxy class inside the main element */
+    main .foxy {
+        display: none;
+    }
+
+    /* Adjust main layout for small screens */
+    main {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition-duration: 0.5;
+    }
+
+    /* Adjust main title size */
+    main h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    /* Adjust secondary titles size */
+    main h3 {
+        font-size: 4vw;
+    }
+
+    /* Adjust layout for cards inside the features section */
+    .features .card-row .card {
+        text-align: center;
+        margin-left: 5em;
+    }
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+/* Other styles */
+.features p {
+    font-family: Montserrat;
+    font-size: 15px;
+    color: #fff;
+    margin-left: auto;
+}
+
+/* Other styles */
+main .title {
+    color: #047cd6;
+    font-size: 50px;
+    margin-bottom: 1%;
+    font-family: Montserrat;
+}
+
+/* Other styles */
+main .title {
+    text-align: center;
+    color: #e7385d;
+    margin-top: -5px;
+}
+
+/* Other styles */
+main .meeting {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Cookie';
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Other styles */
+main .meeting-2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Cookie';
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+/* Other styles */
+.logo {
+    width: 30%;
+    height: 100%;
+    margin-top: 2%;
+    transition-duration: 0.5s;
+}
+
+/* Other styles */
+main h3 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Montserrat;
+    margin-left: 5px;
+}
+
+/* Other styles */
+main a {
+    list-style: none;
+}
+
+/* Button styles */
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-left: 5px;
+    font-family: Montserrat;
+    transition-property: box-shadow;
+    cursor: pointer;
+}
+
+/* Button styles */
+.shadow__btn {
+    background: rgb(0, 140, 255);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+/* Button styles */
+#add {
+    background: rgb(68, 192, 57);
+    box-shadow: 0 0 25px rgb(68, 192, 57);
+}
+
+/* Button hover styles */
+#add:hover {
+    box-shadow: 0 0 5px rgb(68, 192, 57),
+        0 0 25px rgb(68, 192, 57),
+        0 0 50px rgb(68, 192, 57),
+        0 0 100px rgb(68, 192, 57);
+}
+
+/* Button hover styles */
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+/* Feature section styles */
+.features {
+    padding: 30px;
+    opacity: inherit;
+    background-color: #36393f;
+    border-color: #000;
+    position: relative;
+}
+
+/* Feature section title */
+.features .title {
+    font-family: Montserrat;
+    font-size: 200%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #e7385d;
+}
+
+/* Feature styles */
+.features .feature {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #36393f;
+    border-color: #000;
+    position: relative;
+}
+
+/* Feature title */
+.features .feature h1 {
+    font-family: Montserrat;
+    font-size: 160%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #e7385d;
+}
+
+/* Feature subtitle */
+.features .feature h2 {
+    font-family: Montserrat;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Feature description */
+.features .description {
+    font-family: Montserrat;
+    text-align: center;
+    color: #fff;
+}
+
+/* Feature card row */
+.features .card-row {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+/* Feature card */
+.features .card-row .card {
+    width: 80%;
+    max-width: 250px;
+    padding: 35px 20px 35px 20px;
+    background-color: #221f1f;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Feature card title */
+.features .card-row .card h1 {
+    text-align: left;
+    color: rgb(96, 172, 248);
+    cursor: default;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+/* Feature card paragraph */
+.features .card-row .card p {
+    text-align: left;
+    color: rgb(150, 150, 150);
+    cursor: default;
+    font-family: Montserrat;
+    transition-duration: 0.5s;
+}
+
+/* Feature card paragraph hover */
+.features .card-row .card p:hover {
+    cursor: default;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+/* Inline emoji */
+.inline-emoji {
+    height: 1.5em;
+    position: relative;
+    top: 0.3em;
+}
+
+/* Default cursor for features */
+.features * {
+    cursor: default;
+}
