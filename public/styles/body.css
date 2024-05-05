@@ -1,11 +1,11 @@
-/* Font imports */
 @import url("https://fonts.googleapis.com/css?family=Roboto:500");
 @import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Muli&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Cookie&display=swap);
 
-/* Reset and global settings */
+/* Main page */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@ html {
     height: 100%;
 }
 
-/* Server card styles */
 .server-card {
     width: 200px;
     height: 200px;
@@ -59,7 +58,11 @@ html {
     line-height: 1.5;
 }
 
-/* Main layout */
+
+#login-btn {
+    display: none;
+}
+
 main {
     padding-left: 30%;
     padding-right: 50%;
@@ -70,66 +73,20 @@ main {
     cursor: default;
 }
 
-/* Styles for small screens */
-@media only screen and (max-width: 800px) {
-    /* Adjust header padding */
-    header {
-        padding-left: 5%;
-        padding-right: 5%;
-        transition-duration: 0.5s;
-    }
-
-    /* Hide the .foxy class inside the main element */
-    main .foxy {
-        display: none;
-    }
-
-    /* Adjust main layout for small screens */
-    main {
-        text-align: center;
-        margin-top: 10%;
-        margin-bottom: 15%;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition-duration: 0.5;
-    }
-
-    /* Adjust main title size */
-    main h1 {
-        font-size: 10vw;
-        text-align: center;
-    }
-
-    /* Adjust secondary titles size */
-    main h3 {
-        font-size: 4vw;
-    }
-
-    /* Adjust layout for cards inside the features section */
-    .features .card-row .card {
-        text-align: center;
-        margin-left: 5em;
-    }
+main .right-content {
+    justify-content: space-between;
+    margin-top: -50%;
+    margin-left: 160%;
 }
 
-/* Animation */
-@keyframes float {
-    0% {
-        transform: rotate(3deg);
-    }
-
-    50% {
-        transform: rotate(-3deg);
-    }
-
-    100% {
-        transform: rotate(3deg);
-    }
+main .right-content .foxy-image {
+    position: absolute;
+    bottom: 0;
+    height: 92.5vh;
+    margin-left: -27%;
+    margin-top: -10%;
 }
 
-/* Other styles */
 .features p {
     font-family: Montserrat;
     font-size: 15px;
@@ -137,7 +94,20 @@ main {
     margin-left: auto;
 }
 
-/* Other styles */
+main .foxy {
+    margin-left: 135%;
+    margin-top: -61%;
+    margin-bottom: -1%;
+    width: 61%;
+    height: 65%;
+    display: inline;
+}
+
+
+main .main__image {
+    animation: float 1s ease-in-out infinite;
+}
+
 main .title {
     color: #047cd6;
     font-size: 50px;
@@ -145,14 +115,12 @@ main .title {
     font-family: Montserrat;
 }
 
-/* Other styles */
 main .title {
     text-align: center;
     color: #e7385d;
     margin-top: -5px;
 }
 
-/* Other styles */
 main .meeting {
     color: #fff;
     font-size: 40px;
@@ -161,7 +129,6 @@ main .meeting {
     margin-top: 5px;
 }
 
-/* Other styles */
 main .meeting-2 {
     color: #fff;
     font-size: 40px;
@@ -170,7 +137,6 @@ main .meeting-2 {
     margin-top: 1px;
 }
 
-/* Other styles */
 .logo {
     width: 30%;
     height: 100%;
@@ -178,7 +144,6 @@ main .meeting-2 {
     transition-duration: 0.5s;
 }
 
-/* Other styles */
 main h3 {
     color: #fff;
     font-size: 18px;
@@ -186,12 +151,26 @@ main h3 {
     margin-left: 5px;
 }
 
-/* Other styles */
 main a {
     list-style: none;
 }
 
-/* Button styles */
+
+.title {
+    font-family: Montserrat;
+    color: rgb(0, 183, 255);
+    margin-top: 20px;
+}
+
+.features {
+    padding: 30px;
+    opacity: inherit;
+    background-color: #36393f;
+    border-color: #000;
+    position: relative;
+    text-align: center;
+}
+
 .shadow__btn {
     padding: 10px 20px;
     border: none;
@@ -206,19 +185,16 @@ main a {
     cursor: pointer;
 }
 
-/* Button styles */
 .shadow__btn {
     background: rgb(0, 140, 255);
     box-shadow: 0 0 25px rgb(0, 140, 255);
 }
 
-/* Button styles */
 #add {
     background: rgb(68, 192, 57);
     box-shadow: 0 0 25px rgb(68, 192, 57);
 }
 
-/* Button hover styles */
 #add:hover {
     box-shadow: 0 0 5px rgb(68, 192, 57),
         0 0 25px rgb(68, 192, 57),
@@ -226,7 +202,6 @@ main a {
         0 0 100px rgb(68, 192, 57);
 }
 
-/* Button hover styles */
 .shadow__btn:hover {
     box-shadow: 0 0 5px rgb(0, 140, 255),
         0 0 25px rgb(0, 140, 255),
@@ -234,16 +209,6 @@ main a {
         0 0 100px rgb(0, 140, 255);
 }
 
-/* Feature section styles */
-.features {
-    padding: 30px;
-    opacity: inherit;
-    background-color: #36393f;
-    border-color: #000;
-    position: relative;
-}
-
-/* Feature section title */
 .features .title {
     font-family: Montserrat;
     font-size: 200%;
@@ -254,7 +219,6 @@ main a {
     color: #e7385d;
 }
 
-/* Feature styles */
 .features .feature {
     flex-direction: column;
     margin: 20px;
@@ -265,7 +229,6 @@ main a {
     position: relative;
 }
 
-/* Feature title */
 .features .feature h1 {
     font-family: Montserrat;
     font-size: 160%;
@@ -275,7 +238,12 @@ main a {
     color: #e7385d;
 }
 
-/* Feature subtitle */
+.inline-emoji {
+    height: 1.5em;
+    position: relative;
+    top: 0.3em;
+}
+
 .features .feature h2 {
     font-family: Montserrat;
     font-size: 110%;
@@ -285,14 +253,22 @@ main a {
     color: white;
 }
 
-/* Feature description */
+.features .feature__title {
+    font-family: Montserrat;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
 .features .description {
     font-family: Montserrat;
     text-align: center;
     color: #fff;
 }
 
-/* Feature card row */
 .features .card-row {
     margin-top: 10px;
     text-align: center;
@@ -301,7 +277,6 @@ main a {
     flex-flow: wrap;
 }
 
-/* Feature card */
 .features .card-row .card {
     width: 80%;
     max-width: 250px;
@@ -312,7 +287,36 @@ main a {
     margin-bottom: 5%;
 }
 
-/* Feature card title */
+.features .card-row .card p {
+    font-family: Montserrat;
+    font-size: 15px;
+    color: #fff;
+    margin-left: auto;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    font-size: inherit;
+    color: inherit;
+    vertical-align: -0.125em;
+}
+
+@media only screen and (max-width: 320px) {
+
+    main .foxy {
+        display: none;
+    }
+}
+
+.features .card-row .card img {
+    width: 100%;
+}
+
 .features .card-row .card h1 {
     text-align: left;
     color: rgb(96, 172, 248);
@@ -321,7 +325,6 @@ main a {
     font-family: Montserrat;
 }
 
-/* Feature card paragraph */
 .features .card-row .card p {
     text-align: left;
     color: rgb(150, 150, 150);
@@ -330,21 +333,66 @@ main a {
     transition-duration: 0.5s;
 }
 
-/* Feature card paragraph hover */
 .features .card-row .card p:hover {
     cursor: default;
     color: #fff;
     transition-duration: 0.5s;
 }
 
-/* Inline emoji */
-.inline-emoji {
-    height: 1.5em;
-    position: relative;
-    top: 0.3em;
+.server-card {
+    margin-bottom: 5%;
 }
-
-/* Default cursor for features */
 .features * {
     cursor: default;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+        transition-duration: 0.5s;
+    }
+
+    main .foxy {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition-duration: 0.5;
+    }
+
+    main h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    main h3 {
+        font-size: 4vw;
+    }
+
+    .features .card-row .card {
+        text-align: center;
+        margin-left: 5em;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
 }
