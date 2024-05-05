@@ -13,7 +13,7 @@
 }
 
 html {
-    background-image: url("../assets/images/background.png"), linear-gradient(90deg, #0f1923, #0f1923);
+    background-image: linear-gradient(90deg, #0f1923, #0f1923);
     background-size: cover;
     width: 100%;
     height: 100%;
