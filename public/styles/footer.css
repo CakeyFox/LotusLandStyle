@@ -8,6 +8,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     position: relative;
     margin-top: auto;
+    text-align: center;
 }
 
 footer .social-networks {
@@ -28,7 +29,6 @@ footer a {
     font-size: 1.3em;
     margin: 10px auto 1% auto;
     color: #e7385d;
-    text-align: center;
 }
 
 .footer-add a button {
@@ -55,11 +55,10 @@ footer a {
 
 footer p {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     margin: 0;
+    margin-top: 10px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     footer {
         padding: 16px 24px;
