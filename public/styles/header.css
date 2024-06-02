@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Muli&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
@@ -137,7 +137,7 @@ nav.navigation-bar {
     display: none;
     color: #fff;
     background-color: #1d9ae4;
-    font-family: Montserrat;
+    font-family: "Poppins";
     font-size: 15px;
     cursor: pointer;
     padding: 10px 12px 10px 12px;
@@ -193,7 +193,7 @@ nav.navigation-bar {
 }
 
 .overlay__content a {
-    font-family: "Montserrat", sans-serif;
+    font-family: ""Poppins"", sans-serif;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;

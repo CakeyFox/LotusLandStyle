@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 footer .social-networks {
     gap: 0.25em;
@@ -11,7 +12,7 @@ footer a {
 }
 
 .footer-add h2 {
-    font-family: Montserrat;
+    font-family: "Poppins";
     font-size: 130%;
     margin-left: auto;
     margin-right: auto;
@@ -43,12 +44,16 @@ footer a {
     animation: float 5s ease-in-out infinite;
 }
 
+footer p {
+    font-family: "Poppins";
+}
+
 footer {
     background-color: #ff4655;
     color: white;
     padding: 16px 72px;
     overflow: hidden;
-    font-family: Montserrat;
+    font-family: "Poppins";
     position: relative;
     margin-top: auto;
 }
